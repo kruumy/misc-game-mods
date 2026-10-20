@@ -14,6 +14,7 @@ A collection of random mods I have made for random games!
 [autoload]
 SCRIPT_NAME=SCRIPT_PATH
 ```
+3. Obviously edit `SCRIPT_NAME` and `SCRIPT_PATH` to their respective values.
 
 ### Terraria
 1.
