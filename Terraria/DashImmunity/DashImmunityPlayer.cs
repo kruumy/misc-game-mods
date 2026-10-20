@@ -8,12 +8,11 @@ namespace DashImmunity
         public override void PostUpdate()
         {
             // Another method, but can lead to too long of immunity
-            /*
+            
             if (Player.dashDelay == -1)
             {
                 Player.immune = true;
             }
-            */
 
             if (Player.timeSinceLastDashStarted == 0)
             {
