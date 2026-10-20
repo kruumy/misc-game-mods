@@ -1,7 +1,7 @@
 {
   "name": "CommandQueue_Freeze",
   "version_number": "1.0.0",
-  "website_url": "https://github.com/kruumy/unity-game-mods/tree/master/RiskofRain2/CommandQueue.Freeze",
+  "website_url": "https://github.com/kruumy/misc-game-mods/tree/master/RiskofRain2/CommandQueue.Freeze",
   "description": "Freeze time while the command queue menu is open.",
   "dependencies": [
     "bbepis-BepInExPack-5.4.1902",
