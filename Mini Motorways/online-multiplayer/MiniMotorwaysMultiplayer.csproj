@@ -1,0 +1,35 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net472</TargetFramework>
+    <AssemblyName>MiniMotorwaysMultiplayer</AssemblyName>
+    <RootNamespace>MMMultiplayer</RootNamespace>
+    <LangVersion>latest</LangVersion>
+    <Nullable>disable</Nullable>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <GameDir Condition="'$(GameDir)' == ''">D:\games\SteamLibrary\steamapps\common\Mini Motorways</GameDir>
+    <Managed>$(GameDir)\Mini Motorways_Data\Managed</Managed>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NETFramework.ReferenceAssemblies" Version="1.0.3" PrivateAssets="all" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="$(GameDir)\BepInEx\core\BepInEx.dll" Private="false" />
+    <Reference Include="$(GameDir)\BepInEx\core\0Harmony.dll" Private="false" />
+    <Reference Include="$(Managed)\App.dll" Private="false" />
+    <Reference Include="$(Managed)\FixedMath.dll" Private="false" />
+    <Reference Include="$(Managed)\MOAnalytics.Runtime.dll" Private="false" />
+    <Reference Include="$(Managed)\Rewired_Core.dll" Private="false" />
+    <Reference Include="$(Managed)\UnityEngine.UI.dll" Private="false" />
+    <Reference Include="$(Managed)\Unity.TextMeshPro.dll" Private="false" />
+    <Reference Include="$(Managed)\UnityEngine.UIModule.dll" Private="false" />
+    <Reference Include="$(Managed)\UnityEngine.TextRenderingModule.dll" Private="false" />
+    <Reference Include="$(Managed)\UnityEngine.dll" Private="false" />
+    <Reference Include="$(Managed)\UnityEngine.CoreModule.dll" Private="false" />
+    <Reference Include="$(Managed)\UnityEngine.IMGUIModule.dll" Private="false" />
+    <Reference Include="$(Managed)\UnityEngine.InputLegacyModule.dll" Private="false" />
+  </ItemGroup>
+  <Target Name="CopyToPlugins" AfterTargets="Build">
+    <Copy SourceFiles="$(TargetPath)" DestinationFolder="$(GameDir)\BepInEx\plugins\MiniMotorwaysMultiplayer" />
+  </Target>
+</Project>
