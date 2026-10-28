@@ -1,12 +1,3 @@
-"""Smooth Motion for Bloodrush: Undying Wish.
-
-Makes movement render at your monitor's refresh rate instead of the 60 Hz physics rate:
-  1. swaps BloodRush.exe for the official Godot 4.4.1 engine (downloaded from GitHub),
-  2. sets override.cfg: ultrawide support, unlocked fps and physics interpolation,
-  3. updates the script class list inside BloodRush.pck so the game's scripts load on Godot 4.4.
-
-Run it again after a game update. To undo, see the Uninstall steps in README.md.
-"""
 import hashlib
 import http.client
 import os
