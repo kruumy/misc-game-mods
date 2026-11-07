@@ -1,0 +1,3 @@
+[submodule "Vividerie/trainer/external/reshade"]
+	path = Vividerie/trainer/external/reshade
+	url = https://github.com/crosire/reshade.git
